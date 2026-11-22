@@ -39,24 +39,6 @@ The purpose is to make the geography and chronology of Arctic exploration easier
 
 To publish, upload all three files to the root of a public GitHub repository. In **Settings → Pages**, choose **Deploy from a branch → main → / (root)**. GitHub Pages will serve `index.html` as the homepage. The website does **not** require a separate request to the GeoJSON file, as its route data is already embedded in the HTML. An internet connection is needed for externally hosted imagery to load.
 
-## Date corrections and provenance
-
-Seven records contained either transcription errors or a date range inconsistent with the relevant documented voyage. The table shows the changed fields; **the original years are preserved unchanged** as `inicio_original` and `fin_original` in the GeoJSON. Where an expedition spans more years than the specific mapped segment, the corrected range refers to the segment and is explained in the note.
-
-| Expedition (original FID) | Original dates | Corrected dates | Historical basis |
-|---|---|---|---|
-| Willoughby (`4`) | 1553–1555 | **1553–1554** | 1554 is the year of Willoughby’s death during wintering following the 1553 voyage, not 1555. [Reference](https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/willoughby-sir-hugh). |
-| Frobisher (`6`) | 1576–11576 | **1576–1576** | Corrected a five-digit transcription error (11576) to 1576 for Frobisher’s first voyage. [Reference](https://www.rmg.co.uk/stories/maritime-history/martin-frobisher-north-west-passage-expedition-1576-78). |
-| Davis (`8`) | 1585–11585 | **1585–1585** | Corrected a five-digit transcription error (11585) to 1585 for Davis’s first Northwest Passage voyage. [Reference](https://www.rmg.co.uk/stories/maritime-history/john-davis-north-west-passage-expeditions-1585-87). |
-| Baffin (`10`) | 1610–1611 | **1616–1616** | The Arctic Baffin Bay circuit mapped here is consistent with Baffin and Bylot’s second voyage in 1616, not 1610–1611 (Hudson’s voyage). Attribution to this specific map route remains provisional pending verification against its original plate. [Reference](https://www.rmg.co.uk/stories/maritime-history/william-baffin-robert-bylot-north-west-passage-expedition-1615-16). |
-| Nansen (`25`) | 1894–1894 | **1895–1895** | The mapped sledge leg from Fram toward Franz Josef Land began in March 1895, not 1894. The wider Fram expedition continued until 1896. [Reference](https://frammuseum.no/en/polar-history/expeditions/the-first-fram-expedition-1893-1896/). |
-| Back (`31`) | 1833–1834 | **1833–1835** | Back’s Arctic land expedition lasted from 1833 to 1835; the mapped coastal survey took place mainly in 1834. [Reference](https://www.biographi.ca/en/bio/back_george_10E.html). |
-| Franklin (`34`) | 1845–1847 | **1845–1848** | Franklin died in 1847, but his surviving expedition continued and the ships were abandoned in April 1848. The 1848 endpoint refers to the last major documentary event, not a successful return. [Reference](https://parks.canada.ca/lhn-nhs/nu/epaveswrecks/culture/histoire-history/expedition). |
-
-**Dating caveats:** Baffin’s 1616 assignment is supported by the route’s geographic reach into Baffin Bay and the documented 1616 voyage with Robert Bylot, but should be checked against the original georeferenced map. The Nansen 1895 date refers to the mapped sledge leg, while the wider Fram expedition ended in 1896. Franklin’s 1848 endpoint refers to the documented abandonment of his ships, not his death in 1847 or the eventual fate of the crew. Back’s wider expedition ended in 1835, although much of the mapped survey occurred in 1834.
-
-**No geometries or source-provided captain spellings were modified.** Duplicate values in the source `id` field were retained, while the original `fid` values distinguish the 36 records. Names such as “Jown Ross”, “Paary”, “MClintock” and “MCluer” are transcribed from the supplied data and remain as originally entered.
-
 ## Dataset fields
 
 | Attribute | Meaning |
